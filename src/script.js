@@ -5,17 +5,17 @@ const customers = '1';
 const custlocation = 'RSA';
 let locationA='NAM'
 let currency = '$';
-let shipping =400;  //declare shipping without assigning a value yet
+let shipping ;  //declare shipping without assigning a value yet
 
 // Use triple equals(===) instead of = for strict string camparison 
-if (custlocation === 'RSA') {
-     shipping = '400'; 
+if (custlocation == 'RSA') {
+     shipping = 400; 
      currency === 'R'; // Update currency for RSA custlocation
- }else if (locationA === 'NAM'){
-    shipping = '600' ;
+ }else if (locationA == 'NAM'){
+    shipping = 600 ;
     currency ='$';
  } else{
-    shipping='800';
+    shipping=800;
  }
     console.log(FREE_WARNING);// handle free warning locations
  
@@ -29,25 +29,25 @@ let pens = 5 * NONE_SELECTED;// Use let instead of const to allow re-assignment
 
 
 if (shoes + batteries + pens + shirts + toys > 1000 && currency ==='$' ) {
-	if (locationA ===' NAM' && customers < 2) {
-        shipping='600'; //update shipping for NAM location and less than 2 customres
-			if (custlocation === 'RSA'){
-		    shipping = '0' || calcShipping();//use of correct function name
+	if (locationA ==' NAM' && customers < 2) {
+        shipping=600; //update shipping for NAM location and less than 2 customres
+			if (custlocation == 'RSA'){
+		    shipping = 400  || calcShipping();//use of correct function name
 		}
 	}
 }
 
 
-if (shipping === '400' && customers !==1) {
+if (shipping === 400 && customers !==1) {
     (currency ==='R') 
-    console.log(shipping = 0) ;
+    console.log('shipping = 400') ;
 }
 
 if (custlocation === 'NK') {
     console.log(BANNED_WARNING);// Handle invalid location 
    
 }else{
-    (currency ==='R')
+    (currency ='R')
     console.log('price','R', shoes + batteries + pens + shirts + toys + shipping);
     
 }
