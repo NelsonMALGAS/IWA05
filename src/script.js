@@ -5,7 +5,7 @@ const customers = '1';
 const custlocation = 'RSA';
 let locationA='NAM'
 let currency = '$';
-let shipping;  //declare shipping without assigning a value yet
+let shipping =400;  //declare shipping without assigning a value yet
 
 // Use triple equals(===) instead of = for strict string camparison 
 if (custlocation === 'RSA') {
