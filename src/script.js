@@ -32,7 +32,7 @@ if (shoes + batteries + pens + shirts + toys > 1000 && currency ==='$' ) {
 	if (locationA ==' NAM' && customers < 2) {
         shipping=600; //update shipping for NAM location and less than 2 customres
 			if (custlocation == 'RSA'){
-		    shipping = 400  || calcShipping();//use of correct function name
+		    shipping = 0  || calcShipping();//use of correct function name
 		}
 	}
 }
